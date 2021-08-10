@@ -57,7 +57,10 @@ class Chronopost
         foreach ($payloads['skybill'] as $k=>$v){
             $shipp->skybillValue->{$k}  = $v ;
         }
-
+        
+        foreach ($payloads['skybillParamsValue'] as $k=>$v){
+            $shipp->skybillParamsValue->{$k}  = $v ;
+        }
         return $shipp;
     }
 
